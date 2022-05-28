@@ -1102,7 +1102,7 @@ header i:hover {
 .pricing .plans .plan .head {
     padding: 40px 60px;
     border-bottom: 1px solid var(--mColor);
-    border-top: 2px solid var(--mColor);
+    border-top: 1px solid var(--mColor);
 }
 
 .pricing .plans .plan .head h3 {
