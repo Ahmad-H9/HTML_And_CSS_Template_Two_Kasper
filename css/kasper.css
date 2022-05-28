@@ -179,19 +179,14 @@ nav {
     justify-content: flex-end;
 }
 
-.toggle {
+/* .toggle {
     color: #fff;
     font-size: 22px;
     position: absolute;
     right: 15px;
-}
+} */
 
-@media (min-width: 767px) {
-    .toggle {
-        display: none;
-    }
 
-}
 
 header ul {
     display: flex;
@@ -233,7 +228,7 @@ header li a:hover {
     position: relative;
     z-index: 1;
 }
-
+/* iPads */
 @media (min-width:590px) and (max-width:767px) {
     header ul {
         position: absolute;
@@ -241,6 +236,7 @@ header li a:hover {
         transform: translateX(-50%);
     }
 }
+/* Mobile */
 @media (max-width:590px) {
     header .form, 
     header img {
@@ -262,6 +258,7 @@ header li a:hover {
         margin-top: -14px;
     }
 }
+/* Galaxy Fold */
 @media (max-width:300px) {
     header li a {
         padding: 17px 7px;
