@@ -228,6 +228,7 @@ header li a:hover {
     position: relative;
     z-index: 1;
 }
+
 /* iPads */
 @media (min-width:590px) and (max-width:767px) {
     header ul {
@@ -236,13 +237,16 @@ header li a:hover {
         transform: translateX(-50%);
     }
 }
+
 /* Mobile */
 @media (max-width:590px) {
-    header .form, 
+
+    header .form,
     header img {
         position: relative;
         top: -15px;
     }
+
     header ul {
         position: absolute;
         left: 50%;
@@ -252,12 +256,14 @@ header li a:hover {
         -moz-transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
         -o-transform: translate(-50%, 0%);
-}
+    }
+
     header li a {
         padding: 17px 7px;
         margin-top: -14px;
     }
 }
+
 /* Galaxy Fold */
 @media (max-width:300px) {
     header li a {
@@ -578,6 +584,7 @@ header i:hover {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+
 .portfolio button.active,
 .portfolio button:hover {
     background-color: var(--mColor);
@@ -614,6 +621,7 @@ header i:hover {
         width: 100%;
     }
 }
+
 @media (min-width: 768px) and (max-width:991px) {
     .portfolio .box {
         width: 50%;
@@ -1199,7 +1207,7 @@ header i:hover {
     color: var(--mColor);
 }
 
-@media (min-width: 720px) and (max-width:  991px) {
+@media (min-width: 720px) and (max-width: 991px) {
     .pricing .plans {
         grid-template-columns: repeat(2, minmax(260px, 1fr));
     }
@@ -1263,6 +1271,7 @@ header i:hover {
     caret-color: var(--mColor);
     width: calc(100% - 130px);
 }
+
 .subscribe .container form input[type="email"]::placeholder {
     text-transform: uppercase;
     color: white;
@@ -1319,6 +1328,7 @@ header i:hover {
     position: relative;
     margin-bottom: 100px;
 }
+
 .contact-us form .main-input {
     display: block;
     padding: 25px;
@@ -1326,9 +1336,11 @@ header i:hover {
     margin-bottom: 30px;
     border: 1px solid var(--bColor);
 }
+
 .contact-us form textarea {
     height: 200px;
 }
+
 .contact-us form input[type="submit"] {
     position: absolute;
     right: 0;
@@ -1345,15 +1357,18 @@ header i:hover {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+
 .contact-us form textarea::placeholder,
 .contact-us form input::placeholder {
     color: black;
     text-transform: uppercase;
 }
+
 .contact-us form input[type="submit"]:hover {
     color: var(--mColor);
     background-color: #fff;
 }
+
 input:focus,
 textarea:focus {
     outline: none;
@@ -1362,20 +1377,24 @@ textarea:focus {
 .contact-us .info {
     flex-basis: 25%;
 }
+
 .contact-us .info h4 {
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 40px;
 }
+
 .contact-us .info h4:nth-of-type(2) {
     margin-top: 100px;
 }
+
 .contact-us .info .phone {
     display: block;
     margin-bottom: 15px;
     color: var(--tColor);
     font-size: 14px;
 }
+
 .contact-us .info address {
     color: var(--tColor);
     line-height: 2;
@@ -1386,14 +1405,17 @@ textarea:focus {
         flex-direction: column-reverse;
         text-align: center;
     }
+
     .contact-us .info h4,
     .contact-us .info h4:nth-of-type(2) {
         margin: 35px auto 10px;
     }
+
     .contact-us .info address {
         margin-bottom: 20px;
     }
 }
+
 /* End Contaact Us */
 
 /* Start Footer */
@@ -1405,6 +1427,7 @@ textarea:focus {
     padding: 50px 0 30px;
     text-align: center;
 }
+
 .footer::after {
     content: '';
     position: absolute;
@@ -1414,13 +1437,16 @@ textarea:focus {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .footer .container {
     position: relative;
     z-index: 1;
 }
-.footer img  {
+
+.footer img {
     margin-bottom: 50px;
 }
+
 .footer p:not(.copy) {
     padding: 20px;
     width: fit-content;
@@ -1428,22 +1454,28 @@ textarea:focus {
     border-bottom: 1px solid white;
     font-size: 20px;
 }
+
 .footer .links {
     padding: 20px;
 }
+
 .footer .links a {
     color: white;
     padding: 15px;
 }
+
 .footer .links a:hover {
     color: var(--mColor);
 }
-.footer p.copy{
+
+.footer p.copy {
     margin-top: 60px;
     font-weight: 600;
     font-size: 16px;
 }
+
 .footer p.copy span {
     color: var(--mColor);
 }
+
 /* End Footer */
