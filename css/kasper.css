@@ -143,7 +143,7 @@ ul {
 /* Start Header */
 
 header {
-    position: fixed;
+    position: absolute;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -179,38 +179,24 @@ nav {
     justify-content: flex-end;
 }
 
-/* .toggle {
+.toggle {
     color: #fff;
     font-size: 22px;
     position: absolute;
     right: 15px;
-} */
+}
 
+@media (min-width: 767px) {
+    .toggle {
+        display: none;
+    }
 
+}
 
 header ul {
     display: flex;
 }
 
-/* @media (max-width: 767px) {
-    header ul {
-        display: none;
-    }
-
-    header .toggle:hover+ul {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    header .toggle:hover+ul li a {
-        padding: 15px;
-    }
-} */
 
 header li a {
     display: block;
@@ -229,7 +215,6 @@ header li a:hover {
     z-index: 1;
 }
 
-/* iPads */
 @media (min-width:590px) and (max-width:767px) {
     header ul {
         position: absolute;
@@ -238,7 +223,6 @@ header li a:hover {
     }
 }
 
-/* Mobile */
 @media (max-width:590px) {
 
     header .form,
@@ -264,7 +248,6 @@ header li a:hover {
     }
 }
 
-/* Galaxy Fold */
 @media (max-width:300px) {
     header li a {
         padding: 17px 7px;
@@ -279,15 +262,7 @@ header .form {
     position: relative;
     margin-left: 30px;
     border-left: 1px solid #fff;
-
 }
-
-/* @media (max-width: 767px) {
-    header .form {
-        margin: 0;
-        right: 35px;
-    }
-} */
 
 header i {
     position: absolute;
@@ -585,12 +560,15 @@ header i:hover {
     -o-transition: 0.5s;
 }
 
-.portfolio button.active,
-.portfolio button:hover {
+.portfolio button.active {
     background-color: var(--mColor);
     color: white;
 }
 
+.portfolio button:hover {
+    background-color: var(--mColor);
+    color: white;
+}
 
 .portfolio .photos {
     display: flex;
@@ -1107,7 +1085,7 @@ header i:hover {
 .pricing .plans .plan .head {
     padding: 40px 60px;
     border-bottom: 1px solid var(--mColor);
-    border-top: 1px solid var(--mColor);
+    border-top: 2px solid var(--mColor);
 }
 
 .pricing .plans .plan .head h3 {
